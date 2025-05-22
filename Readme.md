@@ -1,135 +1,49 @@
-# Node.js Express Backend Starter Template
+# FantaLies
 
-This is a Node.js backend template using Express.js, TypeScript, and several other essential libraries and tools. It is designed to provide a strong foundation for building robust and scalable server-side applications.
+FantaLies is a global observatory that tracks, analyzes, and archives political, corporate, and institutional promises vs. actions. Wrapped in a playful fantasy theme but grounded in real-world data, FantaLies exposes the gap between words and reality — one broken promise at a time.
 
-## Features
+In the mythical realm of FantaLies, leaders make grand vows, but only some wield the rare magic of follow-through. Our mission is to make these "fantasies" visible, accountable, and unforgettable.
 
-- Express.js for building RESTful APIs
-- TypeScript for static typing
-- Redis for caching
-- MongoDB for data persistence
-- Winston for logging
-- Docker support for containerization
-- Environment variable management with dotenv
-- Rate limiting for security
-- Password hashing with bcrypt
-- JWT for authentication
-- vercel for deployment
+# Our Mission
 
-## Prerequisites
+To hold powerful entities accountable by:
 
-Ensure you have the following installed:
+Tracking public promises from politicians, governments, and corporations
 
-- Node.js (version 18.x)
-- Docker (optional, for containerization)
-- bun `npm i -g bun`
+Evaluating progress and fulfillment using real-world data
 
-## Getting Started
+Allowing citizens to explore, vote, and challenge claims
 
-### Clone the repository
+Creating a fantasy-style interface to make civic awareness more engaging, interactive, and memorable
 
-```bash
-git clone https://github.com/ShivShankarKushwaha/templates
-cd templates/Ts-Server
-```
+# How It Works
 
-### Install dependencies
+## Capture the Promise
 
-```bash
-# Using bun
-bun install
+We collect promises from public speeches, manifestos, campaign documents, press releases, and interviews.
 
-```
+## Track the Journey
 
-### Environment Variables
+Each promise is visualized as a magical quest – tracked over time with factual updates, verified sources, and expert analysis.
 
-Create a `.env` file in the root of the project and configure the following environment variables:
-**Do not use quotes to keep value in .env**
-❌ APP_SECRET="asda34rwer" or APP_SECRET='asda34rwer'
-✅ APP_SECRET=asda34rwer
-```
-MONGO_URI=your-mongodb-uri
-APP_SECRET=your-app-secret
-REDIS_URL=your-redis-url
-REDIS_PASSWORD=your-redis-password
-```
+## Score & Accountability
 
-### Running the Development Server
+Promises are rated as:
 
-```bash
-# Using bun
-bun run dev
+- ✅ Fulfilled
 
-```
+- ⚠️ In Progress
 
-The server will start on the port defined in the `.env` file or default to 5500.
+- ❌ Broken
 
-### Building for Production
+- 🌀 Abandoned in the Mists of Fantasy
 
-```bash
-# Using bun
-bun run build
+User Interaction
 
-```
+Upvote the most ridiculous promises
 
-### Running the Production Server
+Submit new ones with proof
 
-```bash
-# Using bun
-bun start
+Challenge fulfillment status with sources
 
-```
-
-### Running with Docker
-
-Build and start the Docker container:
-
-```bash
-# Suggestion: change the docker image name as you want from ("build:docker":"docker build -t advanced .") from package.json and from docker/index.sh (Image_Name=advanced)
-bun run build:docker
-bun run start:docker
-```
-
-## Testing
-
-Run unit and end-to-end tests using Vitest:
-
-```bash
-# Unit tests
-bun run test:unit
-
-# E2E tests
-bun run test:e2e
-
-# Coverage report
-bun run coverage
-```
-
-## Linting and Formatting
-
-Ensure your code adheres to the project's code style:
-
-```bash
-# Check for linting errors
-bun run lint
-
-# Automatically fix linting errors
-bun run format
-```
-
-## Deploying on Vercel
-Ensure you have an account on vercel.com
-```bash
-# install vercel globally
-bun add -g vercel
-
-# deploy on vercel
-vercel
-
-# if updating deploy on vercel
-vercel;vercel --prod
-```
-
-## Contributing
-
-Contributions are welcome! Please follow the established code style and ensure all tests pass before submitting a pull request.
+Get real-time updates when a "quest" is completed or fails

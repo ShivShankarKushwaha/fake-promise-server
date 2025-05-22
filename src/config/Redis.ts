@@ -33,7 +33,7 @@ export const initRedisClient = async () => {
 
 export const getRedisValue = async (key: string) => {
 	try {
-		const value = await client.json.get(`user:${key}`);
+		const value = await client.json.get(`fake_promise:${key}`);
 		return value;
 	} catch (error) {
 		console.log('Error on get redis value ' + error);
@@ -43,7 +43,7 @@ export const getRedisValue = async (key: string) => {
 
 export const setRedisValue = async (key: string, value: any, ttl: number = 300) => {
 	try {
-		const redisKey = `user:${key}`;
+		const redisKey = `fake_promise:${key}`;
 		await client.json.set(redisKey, '$', value);
 		await client.expire(redisKey, ttl);
 	} catch (error) {
